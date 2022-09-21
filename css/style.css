@@ -1,0 +1,111 @@
+.showMoreInfo {
+    display: flex;
+    margin: 0;
+    animation: aparecer .8s ease 0s forwards;
+}
+
+.moreInfo {
+    display: none;
+    animation: desaparecer .8s ease 0s forwards;
+
+}
+
+#moreInfo {
+    flex-direction: column;
+    justify-content: right;
+    float: right;
+}
+
+#details {
+    position: fixed;
+    z-index: 99;
+}
+
+.details {
+    visibility: hidden;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+
+}
+
+.visible {
+    visibility: visible;
+    animation: aparecer .8s ease 0s forwards;
+}
+
+.backgroudBlack {
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.white {
+    color: white;
+}
+
+.grey {
+    color: grey;
+    font-style: italic;
+
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*fin de  mis estilos*/
+.img-card-fit {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-cont {
+    height: 200px;
+    overflow: hidden;
+    background-color: beige;
+}
+
+.card-content {
+    height: 150px;
+    overflow: auto;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+.checked {
+    color: orange;
+}
+
+.offcanvas-top {
+    height: fit-content;
+}
